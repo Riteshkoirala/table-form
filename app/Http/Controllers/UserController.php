@@ -21,7 +21,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        return view('user.create');
+        //
     }
 
     /**
@@ -56,11 +56,8 @@ class UserController extends Controller
     public function update(UserRequest $request, User $user)
     {
         $userLocate = User::findOrFail($user->id);
-
         $userData  = $request->validated();
-
         $userUpdate = $userLocate->update($userData);
-
         return redirect()->route('users.index')->with('success','The user has been updated successfully');
     }
 

@@ -18,7 +18,7 @@
 </body>
 @yield('script')
 
-<footer class="bg-primary position-relative bottom-0 w-100 d-flex justify-content-center p-4">
+<footer class="bg-primary position-relative mt-xxl-5 bottom-0 w-100 d-flex justify-content-center p-4">
     <p class="align-content-center">@Ritesh Koirala</p>
 </footer>
 </html>
